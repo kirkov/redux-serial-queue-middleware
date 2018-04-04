@@ -1,0 +1,46 @@
+{
+  "name": "redux-serial-queue-middleware",
+  "version": "0.0.0-development",
+  "description": "Redux serial queue middleware",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "dist": "babel src --out-dir dist --ignore **.test.js",
+    "lint": "standard",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "author": "kirkov",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.41",
+    "@babel/core": "^7.0.0-beta.41",
+    "@babel/preset-env": "^7.0.0-beta.41",
+    "@babel/preset-stage-3": "^7.0.0-beta.41",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^22.4.1",
+    "jest": "^22.4.2",
+    "redux": "^3.7.2",
+    "semantic-release": "^15.1.5",
+    "standard": "^11.0.0"
+  },
+  "peerDependencies": {
+    "redux": "^3.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-stage-3"
+    ]
+  },
+  "jest": {
+    "roots": [
+      "src"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirkov/redux-serial-queue-middleware.git"
+  }
+}
